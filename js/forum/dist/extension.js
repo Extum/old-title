@@ -1,6 +1,6 @@
 'use strict';
 
-System.register('extum/flarum-ext-old-title/main', ['flarum/app', 'flarum/extend', 'flarum/components/Page'], function (_export, _context) {
+System.register('extum/flarum-ext-old-title/main', ['flarum/app'], function (_export, _context) {
     "use strict";
 
     var app, extend, Page;
@@ -16,8 +16,7 @@ System.register('extum/flarum-ext-old-title/main', ['flarum/app', 'flarum/extend
 
             app.initializers.add('extum/flarum-ext-old-title', function () {
                 extend(Page.prototype, 'init', function () {
-                    $('head').prepend('<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">' +
-                                      '<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>');
+                    $('head').prepend();
                 });
             });
         }
