@@ -1,6 +1,6 @@
 <?php
 /**
- *  This file is part of extum/flarum-ext-material.
+ *  This file is part of extum/flarum-ext-old-title.
  *
  *  Copyright (c) 2018 .
  *
