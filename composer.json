@@ -1,0 +1,36 @@
+{
+  "name": "extum/flarum-ext-old-title",
+  "description": "Shows the old title for a discussion.",
+  "keywords": ["extension", "old-title", "title", "flarum-extension", "flarum", "style"],
+  "type": "flarum-extension",
+  "license": "MIT",
+  "require": {
+    "flarum/core": "^0.1.0-beta-7"
+  },
+  "authors": [
+    {
+      "name": "Extum",
+      "email": "ardacebi1@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Extum\\MDL\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "Old Title",
+      "icon": {
+          "image": "icon.jpg",
+          "backgroundSize": "cover",
+          "backgroundColor": "#dbc6f9",
+          "color": "#fff"
+      }
+    },
+    "flagrow": {
+      "discuss": ""
+    }
+  }
+}
