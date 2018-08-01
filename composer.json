@@ -23,11 +23,10 @@
     "flarum-extension": {
       "title": "Old Title",
       "icon": {
-          "image": "icon.jpg",
-          "backgroundSize": "cover",
-          "backgroundColor": "#dbc6f9",
-          "color": "#fff"
-      }
+          "name": "fas fa-font",
+           "backgroundColor": "#434ec1",
+           "color": "#fff"
+}
     },
     "flagrow": {
       "discuss": ""
