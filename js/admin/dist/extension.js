@@ -11,7 +11,7 @@ System.register('extum/flarum-ext-old-title/main', ['flarum/app'], function (_ex
     execute: function () {
 
       app.initializers.add('extum/flarum-ext-old-title', function () {
-        $('head').prepend('<style>article.DiscussionRenamedPost span[title]::before{display:block;content:attr(title)}</style>');
+        //console.log('Hello, admin!');
       });
     }
   };
