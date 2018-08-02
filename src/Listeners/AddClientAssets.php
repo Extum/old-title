@@ -40,7 +40,6 @@ class AddClientAssets
                 
                 __DIR__.'/../../less/app.less',
             ]);
-            $event->addBootstrapper('extum/flarum-ext-old-title/main');
         }
     }
     
