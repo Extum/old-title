@@ -1,5 +1,4 @@
 <?php
-
 /**
  *  This file is part of extum/flarum-ext-old-title.
  *
@@ -9,13 +8,9 @@
  *  For the full copyright and license information, please view the LICENSE.md
  *  file that was distributed with this source code.
  */
-
 namespace Extum\OldTitle\Listeners;
 
 use DirectoryIterator;
-use Flarum\Event\ConfigureLocales;
-use Flarum\Event\ConfigureWebApp;
-use Illuminate\Contracts\Events\Dispatcher;
 
 class AddClientAssets
 {

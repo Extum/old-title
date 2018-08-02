@@ -25,10 +25,10 @@
     "flarum-extension": {
       "title": "Old Title",
       "icon": {
-        "name": "",
-        "backgroundColor": "",
-        "color": ""
-      }
+          "name": "fas fa-font",
+           "backgroundColor": "#434ec1",
+           "color": "#fff"
+}
     },
     "flagrow": {
       "discuss": ""
