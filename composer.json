@@ -1,6 +1,6 @@
 {
   "name": "extum/flarum-ext-old-title",
-  "description": "",
+  "description": "Show the old title too if you change a discussion title.",
   "keywords": [
     "flarum"
   ],
@@ -31,7 +31,7 @@
 }
     },
     "flagrow": {
-      "discuss": ""
+      "discuss": "https://discuss.flarum.org/d/14747-old-title-extension-by-extum"
     }
   }
 }
