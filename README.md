@@ -12,6 +12,15 @@ Flarum extension that will show the old title too if you change a discussion tit
 
 ## Installation
 
-```
+Use [Bazaar](https://discuss.flarum.org/d/5151-flagrow-bazaar-the-extension-marketplace) or install manually:
+
+```bash
 composer require extum/flarum-ext-old-title
+```
+
+## Updating
+
+```bash
+composer require extum/flarum-ext-old-title
+php flarum cache:clear
 ```
