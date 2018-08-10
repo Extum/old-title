@@ -1,0 +1,5 @@
+core:
+  forum:
+    post_stream:
+      discussion_renamed_old_tooltip: 'The old title was "{old}"'
+      discussion_renamed_text: "{username} changed the title from {old} to {new}."
