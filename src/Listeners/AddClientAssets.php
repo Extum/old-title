@@ -46,12 +46,4 @@ class AddClientAssets
             ]);
         }
     }
-    public function addLocales(ConfigureLocales $event)
-    {
-        foreach (new DirectoryIterator(__DIR__.'/../../resources/locale') as $file) {
-            if ($file->isFile() && in_array($file->getExtension(), ['yml', 'yaml'])) {
-                $event->locales->addTranslations($file->getBasename('.'.$file->getExtension()), $file->getPathname());
-            }
-        }
-    }
 }
