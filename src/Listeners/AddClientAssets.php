@@ -18,7 +18,6 @@ use Illuminate\Contracts\Events\Dispatcher;
 
 class AddClientAssets
 {
-
     /**
      * Subscribes to the Flarum events.
      *
@@ -26,8 +25,7 @@ class AddClientAssets
      */
     public function subscribe(Dispatcher $events)
     {
-        $events->listen(ConfigureWebApp::class, [$this, 'configureWebApp']);
-        
+        $events->listen(ConfigureWebApp::class, [$this, 'configureWebApp']); 
     }
     
     /**
@@ -37,14 +35,18 @@ class AddClientAssets
      */
     public function configureWebApp(ConfigureWebApp $event)
     {
-        
-
         if ($event->isForum()) {
             $event->addAssets([
                 __DIR__.'/../../resources/less/app.less',
-                
             ]);
         }
     }
-    
+    public function addLocales(ConfigureLocales $event)
+    {
+        foreach (new DirectoryIterator(__DIR__.'/../../resources/locale') as $file) {
+            if ($file->isFile() && in_array($file->getExtension(), ['yml', 'yaml'])) {
+                $event->locales->addTranslations($file->getBasename('.'.$file->getExtension()), $file->getPathname());
+            }
+        }
+    }
 }
